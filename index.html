@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Rhea Urmatan</title>
+        <link rel="icon" href="img/favicon-32x32.png">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link type="text/javascript" src="./script.js">
+    </head>
+
+    <body>
+        <!--H E A D E R-->
+        <header>
+            <a href="#home" class="logo"><img src="img/rh-u_logo.jpg"></a>
+            <div></div>
+
+            <ul class="nav-bar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+
+        <!--- H  O  M  E --->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h4>Hello</h4>
+                <h1>I'm <span>Rhea</span> Urmatan</h1>
+                <h3>an individual with an artistic mind</h3>
+                <a href="#" class="btn">Explore my work</a>
+            </div>
+        </section>
+        
+        <!--- A  B  O  U  T --->
+    <section class="about" id="about">
+      <h2>Get to Know Me</h2>
+            <div class="about-img">
+                <img src="img/banner.png">
+            </div>
+            <div class="about-text">
+                <div class="personal-info">
+                    <div>Name:<span> Rhea Urmatan</span></div>
+                    <div>Birthdate:<span> April 24, 2000</span></div>
+                    <div>Address:<span> Donsol, Sorsogon</span></div>
+                    <div>Email:<span> urmatanrhea@gmail.com</span></div>
+                    <div class="background">
+                    <h1>Educational Background</h1>
+                    <ul>
+                        <li>
+                            <h3>Elementary</h3>
+                            <p>Tomas A. Turalba Memorial Elementary School (Batch 2013)</p>
+                        </li>
+                        <li>
+                            <h3>High School</h2>
+                            <p>Donsol Vocational High School (Batch 2018)</p>
+                            <p>Donsol National Comprehensive High School (Batch 2020)</p>
+                        </li>
+                    </ul>
+                    <div class="skill">
+                        <li><h3>Article Writing</h3>
+                            <span class="bar"><span class="article"></span></span>
+                        </li>
+                        <li><h3>Calligraphy</h3>
+                            <span class="bar"><span class="calligraphy"></span></span>
+                        </li>
+                        <li><h3>Photography</h3>
+                            <span class="bar"><span class="photography"></span></span>
+                        </li>
+                        <li><h3>Web Developing</h3>
+                            <span class="bar"><span class="webdev"></span></span>
+                        </li>
+                    </div>
+                </div>
+                <a href="#" class="btn">Explore my work</a>
+            </div>
+        </div>
+    </section>
+
+        
+        <!--- P O R T F O L I O --->
+        <section class="portfolio" id="portfolio">
+           <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('projects')"> Projects</button>
+                    <button class="btn" onclick="filterSelection('doodles')"> Doodles</button>
+                    <button class="btn" onclick="filterSelection('photos')"> Photos</button>
+                  </div>
+
+        <div class="main">
+            <div class="row">
+                    <div class="column projects">
+                      <div class="content">
+                        <img src="img/project_1.jpg" alt="Mountains" style="width:100%">
+                        <h4>JHSchool</h4>
+                        <p>A visual basic programmed application which intended for educational institution</p>
+                      </div>
+                    </div>
+                    <div class="column projects">
+                      <div class="content">
+                      <img src="img/project_2.jpg" alt="Lights" style="width:100%">
+                        <h4>To-Do List</h4>
+                        <p>it is a simple application for taking notes/lists/to-do tasks</p>
+                      </div>
+                    </div>
+                    <div class="column doodles">
+                      <div class="content">
+                      <img src="img/doodle1.jpg" alt="Nature" style="width:100%">
+                        <h4>Doodle time</h4>
+                        <p>Time killing hobby</p>
+                      </div>
+                    </div>
+                    
+                    <div class="column doodles">
+                      <div class="content">
+                        <img src="img/doodle2.jpg" alt="Car" style="width:100%">
+                        <h4>Last</h4>
+                        <p>As far as I could remember this was the last doodle that I made.</p>
+                      </div>
+                    </div>
+                    <div class="column photos">
+                      <div class="content">
+                      <img src="img/p1.jpg" alt="Car" style="width:100%">
+                        <h4>P.O.V</h4>
+                        <p>Favorite time of the day</p>
+                      </div>
+                    </div>
+                    <div class="column photos">
+                      <div class="content">
+                      <img src="img/p4.jpg" alt="Car" style="width:100%">
+                        <h4>Greens</h4>
+                        <p>Fresh oxygen incoming..</p>
+                      </div>
+                    </div>
+                    <div class="column photos">
+                      <div class="content">
+                      <img src="img/p7.jpg" alt="Car" style="width:100%">
+                        <h4>Hide & Seek</h4>
+                        <p>Never thought I would take a photo of this one.</p>
+                      </div>
+                    </div>
+                    <div class="column photos">
+                      <div class="content">
+                      <img src="img/p8.jpg" alt="Car" style="width:100%">
+                        <h4>Donsol Riverside</h4>
+                        <p>Favorite hangout place since junior high school</p>
+                      </div>
+                    </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="contact-container">       
+            <div class="form-container">
+                <h3>Get in Touch</h3>
+                <div class="contact-list">
+                    <li><a href="#">Donsol, Sorsogon</a></li>
+                    <li><a href="#">urmatanrhea@gmail.com</a></li>
+                    <li><a href="#">09517194857</a></li>
+                </div>
+       
+                <form action="" class="contact-form" method="POST">
+                    <input type="text" placeholder="Input your Name" required>
+                    <input type="email" placeholder="Enter your Email" required>
+                    <textarea name="message" id="" cols="20" rows="10" placeholder="Write your message here" required></textarea>
+                    <a href = "mailto: urmatanrhea@gmail.com">Send Email</a>
+            </div>
+            
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62219.84701466865!2d123.51560455658422!3d12.924397046962676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a13d63fd1e0caf%3A0x21f1dcec8eeb9a6!2sDancalan%2C%20Donsol%2C%20Sorsogon!5e0!3m2!1sen!2sph!4v1695713920689!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    <footer class="sticky-footer">
+     
+        <div class="footer-content">
+          <a href="#home" class="logo"><img src="img/rh-u_logo.jpg"></a>
+                <a href="https://github.com/rheaurmatan"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/rhyhdsns/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/rhea-urmatan-362926296/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.upwork.com/freelancers/~015783e63a5f5c10ff"><i class='bx bxl-upwork'></i></a>
+            <p>&copy; All rights reserved | designed by: rheaurmatan</p>
+        </div>
+    </footer>
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+    
+        
+    </body>
+</html>
