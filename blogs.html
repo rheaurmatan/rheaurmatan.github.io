@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Narrative Reports</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        .accordion {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 10px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .report img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Weekly Narrative Reports</h2>
+    <div id="reports-container">
+        <!-- Reports will be dynamically added here -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const reports = [
+                { date: "February - Week 2", content: "This is the report for the second week of February.", image: "img/feb_week2.jpg" },
+                { date: "May - Week 3", content: "This is the report for the third week of May.", image: "img/may_week3.jpg" }
+            ];
+
+            const container = document.getElementById("reports-container");
+            
+            reports.forEach(report => {
+                const button = document.createElement("button");
+                button.className = "accordion";
+                button.textContent = report.date;
+                
+                const panel = document.createElement("div");
+                panel.className = "panel";
+                panel.innerHTML = `<p>${report.content}</p><img src="${report.image}" alt="${report.date}">`;
+                
+                button.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    panel.style.display = panel.style.display === "block" ? "none" : "block";
+                });
+                
+                container.appendChild(button);
+                container.appendChild(panel);
+            });
+        });
+    </script>
+</body>
+</html>
