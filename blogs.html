@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Narrative Reports</title>
+    <title>Rhea Urmatan | Portfolio</title>
+    <link rel="icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style>
         .accordion {
-            background-color: #f1f1f1;
-            color: #444;
+            width: 80%;
+            margin: auto;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #ccc;
+        }
+        .accordion-header {
+            background: #f4f4f4;
+            padding: 10px;
             cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-            transition: 0.4s;
+            font-weight: bold;
         }
-
-        .active, .accordion:hover {
-            background-color: #ccc;
-        }
-
-        .panel {
-            padding: 10px;
+        .accordion-content {
             display: none;
-            background-color: white;
-            overflow: hidden;
+            padding: 10px;
+            background: #fff;
         }
-
-        .report img {
+        .accordion-content img {
             max-width: 100%;
             height: auto;
             margin-top: 10px;
@@ -39,38 +35,66 @@
     </style>
 </head>
 <body>
-    <h2>Weekly Narrative Reports</h2>
-    <div id="reports-container">
-        <!-- Reports will be dynamically added here -->
-    </div>
+    <!-- Header Section -->
+    <header>
+        <a href="#home" class="logo"><img src="img/rh-u_logo.jpg" alt="Logo"></a>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs">
+        <h2>Blog Posts - Weekly Reports</h2>
+        <div class="accordion">
+            <!-- February -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">February</div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Week 2</div>
+                        <div class="accordion-content">
+                            <p>Summary of activities for Week 2.</p>
+                            <img src="img/feb_week2.jpg" alt="February Week 2">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Week 3</div>
+                        <div class="accordion-content">
+                            <p>Summary of activities for Week 3.</p>
+                            <img src="img/feb_week3.jpg" alt="February Week 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- May -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">May</div>
+                <div class="accordion-content">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">Week 3</div>
+                        <div class="accordion-content">
+                            <p>Summary of activities for Week 3.</p>
+                            <img src="img/may_week3.jpg" alt="May Week 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const reports = [
-                { date: "February - Week 2", content: "This is the report for the second week of February.", image: "img/feb_week2.jpg" },
-                { date: "May - Week 3", content: "This is the report for the third week of May.", image: "img/may_week3.jpg" }
-            ];
-
-            const container = document.getElementById("reports-container");
-            
-            reports.forEach(report => {
-                const button = document.createElement("button");
-                button.className = "accordion";
-                button.textContent = report.date;
-                
-                const panel = document.createElement("div");
-                panel.className = "panel";
-                panel.innerHTML = `<p>${report.content}</p><img src="${report.image}" alt="${report.date}">`;
-                
-                button.addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    panel.style.display = panel.style.display === "block" ? "none" : "block";
-                });
-                
-                container.appendChild(button);
-                container.appendChild(panel);
-            });
-        });
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
     </script>
 </body>
 </html>
